@@ -1,0 +1,13 @@
+vim leader: \
+half page up: ctrl+u
+half page up: ctrl+d
+scroll popup window up: ctrl+f
+scroll popup window up: ctrl+b
+next autocomplete option:tab
+select autocomplete option: enter
+show documentation on hovered item: K
+hover over word and go to definition: gd
+find all hovered words references: gr
+go back(after going to definition): ctrl+o
+go from term mode to normal: esc
+move current window to new tab: ctrl+w+T

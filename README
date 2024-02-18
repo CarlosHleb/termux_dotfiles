@@ -1,0 +1,6 @@
+Install bash-ps1-themes and lscolors
+check bashrc for reference
+https://github.com/trapd00r/LS_COLORS
+https://github.com/gcholette/bash-ps1
+
+uses vim
