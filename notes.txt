@@ -11,3 +11,29 @@ find all hovered words references: gr
 go back(after going to definition): ctrl+o
 go from term mode to normal: esc
 move current window to new tab: ctrl+w+T
+
+start local python docs webserver:
+```
+$ proj
+$ cd django/docs/_build/html
+$ python -m http.server --directory . --bind 127.0.0.1
+```
+
+search recursivly in a dir:
+```
+$ grep -nr 'yourString*' .
+```
+
+activate a venv
+```
+$ source path/to/bin/activate
+```
+If you want yo deactivate, do:
+```
+$ source path/yo/bin/deactivate
+```
+
+print current venv:
+```
+$ echo $VIRTUAL_ENV
+```
