@@ -21,6 +21,7 @@ let g:taboo_tab_format = " %N %f %x "
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_theme='apprentice'
+let g:ctrlp_custom_ignore = 'venv'
 
 " Use tab for trigger completion with characters ahead and navigate
 " NOTE: There's always complete item selected by default, you may want to enable
@@ -75,9 +76,9 @@ nmap <silent> gr <Plug>(coc-references)
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set textwidth=79
+" set textwidth=79
 set expandtab
-set autoindent
+" set autoindent
 set fileformat=unix
 
 tnoremap <Esc> <C-\><C-n>
