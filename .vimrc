@@ -11,6 +11,7 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'Donaldttt/fuzzyy'
 call plug#end()
 
 filetype plugin indent on
@@ -73,9 +74,13 @@ nmap <silent> gd <Plug>(coc-definition)
 " nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+nnoremap <C-p> :FuzzyFilesRoot<CR>
+
+autocmd BufWritePre *.go :CocCommand editor.action.organizeImport
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 " set textwidth=79
 set expandtab
 " set autoindent
